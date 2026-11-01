@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #7A9A6E;
+  --color-secondary: #C4B99A;
+  --color-accent: #C4B99A;
+  --color-background: #0A0D08;
+  --color-surface: #C4B99A;
+  --color-panel: #11150E;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+  --color-border: #27272A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0A0D08;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Subtle topographic dither & grid texture */
+.bg-dither-grid {
+  background-image: 
+    radial-gradient(rgba(196, 185, 154, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(39, 39, 42, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 39, 42, 0.35) 1px, transparent 1px);
+  background-size: 16px 16px, 64px 64px, 64px 64px;
+}
+
+/* Staggered animation delays */
+.delay-75 {
+  animation-delay: 75ms;
+}
+.delay-150 {
+  animation-delay: 150ms;
+}
+.delay-225 {
+  animation-delay: 225ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+/* Custom Mapbox Popup styling for Meridian Geo dark theme */
+.mapboxgl-popup-content {
+  background: #11150E !important;
+  color: #FFFFFF !important;
+  border: 1px solid #27272A !important;
+  border-radius: 14px !important;
+  padding: 12px 14px !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7) !important;
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #11150E !important;
+  border-bottom-color: #11150E !important;
+}
+
+.mapboxgl-popup-close-button {
+  color: #A1A1AA !important;
+  font-size: 16px !important;
+  right: 8px !important;
+  top: 6px !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  color: #FFFFFF !important;
+  background: transparent !important;
+}
+
+.mapboxgl-ctrl-group {
+  background: #11150E !important;
+  border: 1px solid #27272A !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.mapboxgl-ctrl-group button {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0D08;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A9A6E;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
