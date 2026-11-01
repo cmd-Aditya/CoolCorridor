@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { Suspense, useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import {
@@ -34,7 +34,7 @@ interface CoolPlace {
 
 type TransportMode = "walking" | "cycling" | "driving";
 
-export default function RoutePage() {
+function RouteContent() {
   const searchParams = useSearchParams();
 
   const [start, setStart] = useState("");
@@ -332,7 +332,7 @@ export default function RoutePage() {
               <span className="font-bold text-[#7A9A6E]">Cool</span>
               <span className="font-medium text-[#C4B99A]">Corridor</span>
               <span className="text-[#A1A1AA] text-xs font-mono ml-1.5 uppercase">
-                {"// Route"}
+                · Route
               </span>
             </span>
           </div>
@@ -596,5 +596,19 @@ export default function RoutePage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function RoutePage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#0A0D08] text-[#C4B99A] font-mono text-xs flex items-center justify-center">
+          LOADING COOL ROUTE...
+        </div>
+      }
+    >
+      <RouteContent />
+    </Suspense>
   );
 }

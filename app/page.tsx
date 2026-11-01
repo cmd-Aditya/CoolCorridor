@@ -230,7 +230,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#27272A] bg-[#11150E]">
               <Layers size={13} className="text-[#7A9A6E]" />
               <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#C4B99A]">
-                COOLCORRIDOR // COOLER PLACES. BRIGHTER DAYS.
+                COOLCORRIDOR · COOLER PLACES. BRIGHTER DAYS.
               </span>
             </div>
 
@@ -329,7 +329,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#7A9A6E]" />
                   <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#C4B99A]">
-                    MODULE 01 // ATMOSPHERIC STATE
+                    MODULE 01 · ATMOSPHERIC STATE
                   </span>
                 </div>
                 <Thermometer size={18} className="text-[#7A9A6E]" />
@@ -393,7 +393,7 @@ export default function HomePage() {
                         <span>{weather.humidity}% RH</span>
                       </div>
                       <p className="font-mono text-[11px] text-[#A1A1AA]">
-                        WMO CODE // {weather.icon}
+                        WMO CODE · {weather.icon}
                       </p>
                     </div>
                   </div>
@@ -435,7 +435,7 @@ export default function HomePage() {
                     <Snowflake size={22} />
                   </div>
                   <span className="font-mono text-xs font-semibold uppercase px-3 py-1 rounded-full bg-[#0A0D08] border border-[#27272A] text-[#7A9A6E]">
-                    MODE 01 // STATIONARY
+                    MODE 01 · STATIONARY
                   </span>
                 </div>
 
@@ -492,7 +492,7 @@ export default function HomePage() {
                     <Route size={22} />
                   </div>
                   <span className="font-mono text-xs font-semibold uppercase px-3 py-1 rounded-full bg-[#0A0D08] border border-[#27272A] text-[#C4B99A]">
-                    MODE 02 // CORRIDOR
+                    MODE 02 · CORRIDOR
                   </span>
                 </div>
 
@@ -578,7 +578,7 @@ export default function HomePage() {
               <div className="flex items-center gap-2">
                 <TreePine size={16} className="text-[#7A9A6E]" />
                 <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#C4B99A]">
-                  INTERACTIVE MODEL // MICROCLIMATE COMFORT SIMULATOR
+                  INTERACTIVE MODEL · MICROCLIMATE COMFORT SIMULATOR
                 </span>
               </div>
 

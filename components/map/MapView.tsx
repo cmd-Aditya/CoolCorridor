@@ -83,7 +83,7 @@ export default function MapView({
         <div className="bg-[#0A0D08]/90 backdrop-blur-md border border-[#27272A] px-3 py-1.5 rounded-full flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#7A9A6E] animate-pulse" />
           <span className="font-mono text-[11px] font-semibold tracking-wider uppercase text-[#C4B99A]">
-            TERRAIN LAYER // {mode === "cool" ? "COOL REFUGES" : "THERMAL"}
+            TERRAIN LAYER · {mode === "cool" ? "COOL REFUGES" : "THERMAL"}
           </span>
         </div>
         <div className="hidden sm:flex bg-[#0A0D08]/85 backdrop-blur-md border border-[#27272A] px-3 py-1.5 rounded-full items-center gap-1.5 font-mono text-[11px] text-[#A1A1AA]">

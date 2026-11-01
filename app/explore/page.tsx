@@ -131,7 +131,7 @@ function ExploreContent() {
               <span className="text-sm sm:text-base block leading-none">
                 <span className="font-bold text-[#7A9A6E]">Cool</span>
                 <span className="font-medium text-[#C4B99A]">Corridor</span>
-                <span className="text-white font-semibold">{" // Cool Places"}</span>
+                <span className="text-white font-semibold"> · Cool Places</span>
               </span>
               <span className="font-mono text-[10px] text-[#A1A1AA] uppercase tracking-wider">
                 MICROCLIMATE REFUGE DIRECTORY
@@ -220,7 +220,7 @@ function ExploreContent() {
               <div className="flex items-center justify-between">
                 <div>
                   <span className="font-mono text-[11px] uppercase tracking-wider text-[#C4B99A] block">
-                    SCAN RESULTS // 1.5KM RADIUS
+                    SCAN RESULTS · 1.5KM RADIUS
                   </span>
                   <h1 className="text-xl font-semibold text-white mt-0.5">
                     {loading
