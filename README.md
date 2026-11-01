@@ -70,5 +70,5 @@ The system suggests the most suitable transport mode based on distance and shows
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/coolcorridor.git
-cd coolcorridor
+git clone https://github.com/cmd-Aditya/CoolCorridor.git
+cd CoolCorridor
