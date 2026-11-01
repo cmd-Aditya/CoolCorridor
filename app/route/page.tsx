@@ -332,7 +332,7 @@ export default function RoutePage() {
               <span className="font-bold text-[#7A9A6E]">Cool</span>
               <span className="font-medium text-[#C4B99A]">Corridor</span>
               <span className="text-[#A1A1AA] text-xs font-mono ml-1.5 uppercase">
-                // Route
+                {"// Route"}
               </span>
             </span>
           </div>
